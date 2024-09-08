@@ -23,7 +23,7 @@ def predict():
         # Get data from the POST request
         data = request.get_json()
 
-        # Extract only the features used in training (e.g., 4 features)
+        # Extract only the features used in training 
         features = np.array([[
             float(data['sub_metering_1']),
             float(data['sub_metering_2']),
